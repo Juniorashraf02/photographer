@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import CustomLink from './CustomLink';
 
 const Header = () => {
     const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -31,29 +32,29 @@ const Header = () => {
                         >
                             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
                                 <li className="nav-item">
-                                    <Link to="/home" className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75">Home</Link>
+                                    <CustomLink to="/home" className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75">Home</CustomLink>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/home" className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75">SERVICES</Link>
+                                    <CustomLink to="/services" className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75">SERVICES</CustomLink>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/home" className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75">PROJECTS</Link>
+                                    <CustomLink to="/projects" className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75">PROJECTS</CustomLink>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/home" className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75">BLOGS</Link>
+                                    <CustomLink to="/blogs" className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75">BLOGS</CustomLink>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/home" className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75">CONTACTS</Link>
+                                    <CustomLink to="/contacts" className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75">CONTACTS</CustomLink>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/home" className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75">ABOUT ME</Link>
+                                    <CustomLink to="/aboutme" className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75">ABOUT ME</CustomLink>
                                 </li>
                                 <li className="nav-item flex items-center">
-                                    <Link to="/home" className="px-3 text-xs uppercase font-bold leading-snug text-white hover:opacity-75">
+                                    <CustomLink to="/login" className="px-3 text-xs uppercase font-bold leading-snug text-white hover:opacity-75">
                                         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                                             Log In
                                         </button>
-                                    </Link>
+                                    </CustomLink>
                                 </li>
                             </ul>
                         </div>
