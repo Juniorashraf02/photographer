@@ -1,9 +1,12 @@
 import React from 'react';
+import img from '../image/picture-01.png'
 
 const AboutMe = () => {
     return (
         <div className="mt-28 container mx-auto w-3/4">
-            <h1 className="text-2xl text-blue-700 font-bold text-left"><span className="text-orange-600">Hi</span> there!!! <br /> I am <span className="text-orange-600">MD. Istiak Ashraf</span></h1>
+
+            <img className="mx-auto" src={img} alt="" />
+            <h1 className="text-2xl text-blue-700 font-bold text-left"><span className="text-red-400">Hi</span> there!!! <br /> I am <span className="text-red-400">MD. Istiak Ashraf</span></h1>
             <p className="text-gray-500 text-justify">
 
                 <p className="mt-5">I'm an Undergrad student, class representative, transformation leader, graphic designer and also a front-end web developer. I have achieved 1st position with my team in Hult Prize at Pabna Textile Engineering College. Also achieved 11th position in distinguished National Undergrad level competition Textile Talent Hunt season 7 at Pabna Textile Engineering College Zone. I with some of my seniors and my batchmates formed a group called "Coding School" in 2017 and its main intention was to introduce the coding languages to the school level students. We had a YouTube Channel named "Coding School". We were also covering some basic ICT knowledges in our workshops and channels</p>
