@@ -12,6 +12,7 @@ import Projects from './Components/Home/Projects/Projects';
 import Proceed from './Components/Proceed/Proceed';
 import RequireAuth from './Components/RequireAuth/RequireAuth';
 import AboutMe from './Components/Aboutme/Aboutme';
+import NotFound from './Components/NotFound/NotFound';
 
 
 function App() {
@@ -34,6 +35,8 @@ function App() {
 <Route path="/aboutme" element={<AboutMe/>}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<Signup />}></Route>
+        <Route path="*" element={<NotFound />}></Route>
+
       </Routes>
       <Footer />
     </div>

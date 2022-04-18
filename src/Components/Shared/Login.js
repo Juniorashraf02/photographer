@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -22,6 +22,7 @@ const Login = () => {
 
     const [signInWithEmail, user, loading, emailError] = useSignInWithEmailAndPassword(auth);
     const [signInWithGoogle, googleUser, loading2, googleError] = useSignInWithGoogle(auth);
+    const [sendPasswordResetEmail, sending, resetError] = useSendPasswordResetEmail(auth);
 
 
     const handleEmailChange = (e) => {
@@ -51,8 +52,16 @@ const Login = () => {
         console.log(userInfo);
     }
 
-    const handleGoogleSignIn=()=> {
-        signInWithGoogle()
+    const handleGoogleSignIn=(e)=> {
+        // setUserInfo({ ...userInfo,email: e.target.value})
+        signInWithGoogle();
+        
+    }
+
+    const handleResetPassword =()=>{
+        sendPasswordResetEmail(userInfo.email);
+        toast.info("sending email");
+        toast.success("Email sent",{ delay: 1000 });
     }
 
     const navigate = useNavigate();
@@ -67,7 +76,7 @@ const Login = () => {
 
 
     useEffect(() => {
-        const error = emailError || googleError;
+        const error = emailError || googleError || resetError;
         if (error) {
             switch (error?.code) {
                 case "auth/invalid-email":
@@ -81,7 +90,9 @@ const Login = () => {
                     toast("something went wrong")
             }
         }
-    }, [emailError, googleError])
+    }, [emailError, googleError]);
+
+    
 
 
     return (
@@ -100,7 +111,9 @@ const Login = () => {
                     <button>Log In</button>
 
                     <p>Don't have an account? <Link to="/signup" className="text-sky-400">Sign up</Link> </p>
-                    <ToastContainer />
+                    <br />
+                    <p>Forgot password? <u onClick={handleResetPassword} className="cursor-pointer">reset password</u> </p>
+                    <ToastContainer/>
                     <div className="flex gap-5 items-center mt-5 justify-center">
                         <div className="bg-blue-400 h-0.5 border-1 w-full"><hr /></div>
                         <div className="text-blue-400">or</div>
