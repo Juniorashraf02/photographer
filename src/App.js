@@ -11,6 +11,8 @@ import Services from './Components/Home/Services/Services';
 import Projects from './Components/Home/Projects/Projects';
 import Proceed from './Components/Proceed/Proceed';
 import RequireAuth from './Components/RequireAuth/RequireAuth';
+import AboutMe from './Components/Aboutme/Aboutme';
+
 
 function App() {
   return (
@@ -29,6 +31,7 @@ function App() {
             <Proceed />
           </RequireAuth>
         }></Route>
+<Route path="/aboutme" element={<AboutMe/>}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<Signup />}></Route>
       </Routes>
