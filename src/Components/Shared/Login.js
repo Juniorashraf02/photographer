@@ -5,6 +5,8 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import auth from "../../firebase.init";
 import './Form.css';
+import { FcGoogle } from 'react-icons/fc';
+
 
 const Login = () => {
 
@@ -47,6 +49,10 @@ const Login = () => {
         e.preventDefault();
         signInWithEmail(userInfo.email, userInfo.password);
         console.log(userInfo);
+    }
+
+    const handleGoogleSignIn=()=> {
+        signInWithGoogle()
     }
 
     const navigate = useNavigate();
@@ -100,15 +106,13 @@ const Login = () => {
                         <div className="text-gray-400">or</div>
                         <div className="bg-blue-500 h-px  w-full"><hr /></div>
                     </div>
-                    <button>
-                        <div>
-                            
-                        </div>
-                        <div>
-                            <p>Google Sign In</p>
-                        </div>
-                    </button>
+                    
                 </form>
+                <button onClick={handleGoogleSignIn} className="flex ">
+                        <FcGoogle className="display: inline justify-self-start text-4xl"></FcGoogle>
+                        <p className="display: inline px-10">Google Sign In</p>
+                    </button>
+                    {errors?.password && <p className="error-message">{errors.password}</p>}
 
             </div>
 
