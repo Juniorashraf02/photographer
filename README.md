@@ -1,5 +1,5 @@
 <h1>Wildlife Capturer</h1>
-<p>Live Link: https://wildlife-capturer.netlify.app/c </p>
+<p>Live Link: https://wildlife-capturer.netlify.app/ </p>
 
 * This project was build with the help of react
 * Tailwind css is used 
