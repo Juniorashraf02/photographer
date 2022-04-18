@@ -13,7 +13,7 @@ const Proceed = () => {
 
     return (
         <div>
-            <section className="overflow-hidden text-gray-700 container mt-10 ">
+            <section className="overflow-hidden text-gray-700 container mt-28 ">
                 <div className="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
                     <div className="flex flex-wrap -m-1 md:-m-2">
                         <div className="flex flex-wrap w-1/3">
