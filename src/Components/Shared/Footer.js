@@ -4,8 +4,8 @@ const date = new Date().getFullYear();
 
 const Footer = () => {
     return (
-        <div className='bg-stone-900'>
-            <div >
+        <div className='bg-stone-900 mt-10'>
+            <div className="py-10" >
                 <h1 className='text-white font-semibold'>Join with me on social media</h1>
                 <div className="flex gap-5 justify-center my-3">
                     <a href="https://www.facebook.com/juniorashraf02" target="_blank" rel="noreferrer"><AiFillFacebook className='text-white' /></a>

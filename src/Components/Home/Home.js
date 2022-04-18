@@ -1,5 +1,7 @@
 import React from 'react';
-import './Home.css'
+import Hiring from '../Hiring/Hiring';
+import Services from './Services/Services';
+
 
 
 const Home = () => {
@@ -7,6 +9,9 @@ const Home = () => {
 
        <div >
           <img className='w-full' src={`https://cdn.pixabay.com/photo/2017/05/08/13/15/bird-2295436_960_720.jpg`} alt="" />
+
+          <Services/>
+         <Hiring/>
        </div>
 
 
