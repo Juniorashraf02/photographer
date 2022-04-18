@@ -13,7 +13,7 @@ const Proceed = () => {
 
     return (
         <div>
-            <section className="overflow-hidden text-gray-700 ">
+            <section className="overflow-hidden text-gray-700 container mt-10 ">
                 <div className="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
                     <div className="flex flex-wrap -m-1 md:-m-2">
                         <div className="flex flex-wrap w-1/3">
@@ -56,7 +56,15 @@ const Proceed = () => {
                     </div>
                 </div>
             </section>
-            <p className="text-justify p-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate explicabo, enim quam sapiente laboriosam repellat facere voluptates totam deleniti, quos illum ad dolore saepe consectetur, minus magni beatae maiores. Quo architecto consequatur sed! Nisi placeat voluptas pariatur mollitia veritatis dolorem odio? Quaerat praesentium ipsum veritatis? Ea, soluta ad maiores tempora cum sapiente minima consequatur possimus eligendi ipsum rem assumenda culpa iure! Quaerat praesentium, iusto voluptatem tempora sapiente reiciendis ab aliquid amet, odio tenetur iure laboriosam, enim facilis eius! Provident iure natus officiis, iusto veniam suscipit quae rem recusandae perspiciatis alias, expedita amet? Error expedita, dignissimos officia blanditiis dolor, aspernatur, animi mollitia quia eum quisquam nobis similique. Ut, omnis itaque blanditiis labore harum exercitationem vitae a ad nihil molestias nemo quaerat laboriosam odit at quis modi obcaecati vero! Eius reiciendis ullam eos atque asperiores, aperiam veniam maiores sit explicabo dolorem libero voluptatibus possimus fugit eveniet quos commodi quod eligendi! Eum culpa necessitatibus a reprehenderit repellendus nihil quia et, officiis veritatis molestiae saepe ipsum in adipisci autem ab sed quam at minima voluptatem? Ullam voluptatem omnis in, id quibusdam error enim eaque tempora quas tenetur sit eveniet eius perferendis cupiditate explicabo exercitationem pariatur. Consectetur reiciendis quaerat quas. In voluptate libero aliquam inventore!</p>
+            <p className="text-justify p-10 text-gray-400">
+                Every image is premium quality and lots of time was spen for each photo. Sometime hours spent for a single click. So for this reason, each photo is charged high. And if you want a high resolution picture then it'll charge more!!! But I'm thanking for selecting my picture! It helps me a lot.
+            </p>
+
+            <div className="md:flex justify-center gap-5">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold mt-3 py-2 px-4 rounded"> Buy 5 Images </button> <br />
+                <button class="bg-orange-600 hover:bg-orange-700 text-white font-bold mt-3 py-2 px-4 rounded"> Check offer </button> <br />
+                <button class="bg-green-600 hover:bg-green-700 text-white font-bold mt-3 py-2 px-4 rounded"> Buy me a coffee! </button>
+            </div>
         </div>
 
     );

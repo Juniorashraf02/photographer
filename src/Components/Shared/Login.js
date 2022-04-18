@@ -102,9 +102,9 @@ const Login = () => {
                     <p>Don't have an account? <Link to="/signup" className="text-sky-400">Sign up</Link> </p>
                     <ToastContainer />
                     <div className="flex gap-5 items-center mt-5 justify-center">
-                        <div className="bg-blue-500 h-px border-1 w-full"><hr /></div>
-                        <div className="text-gray-400">or</div>
-                        <div className="bg-blue-500 h-px  w-full"><hr /></div>
+                        <div className="bg-blue-400 h-0.5 border-1 w-full"><hr /></div>
+                        <div className="text-blue-400">or</div>
+                        <div className="bg-blue-400 h-0.5  w-full"><hr /></div>
                     </div>
                     
                 </form>

@@ -49,9 +49,7 @@ const Header = () => {
                                 <li className="nav-item">
                                     <CustomLink to="/blogs" className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75">BLOGS</CustomLink>
                                 </li>
-                                <li className="nav-item">
-                                    <CustomLink to="/contacts" className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75">CONTACTS</CustomLink>
-                                </li>
+                                
                                 <li className="nav-item">
                                     <CustomLink to="/aboutme" className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75">ABOUT ME</CustomLink>
                                 </li>
