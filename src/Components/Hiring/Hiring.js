@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+// handler for submit btn
 const handleSubmitBtn =(e)=>{
     e.preventDefault();
     

@@ -54,7 +54,7 @@ const Login = () => {
 
     const handleGoogleSignIn=(e)=> {
         // setUserInfo({ ...userInfo,email: e.target.value})
-        signInWithGoogle();
+        signInWithGoogle(userInfo.email);
         
     }
 
