@@ -10,8 +10,9 @@ import Services from './Components/Home/Services/Services';
 
 import Proceed from './Components/Proceed/Proceed';
 import RequireAuth from './Components/RequireAuth/RequireAuth';
-import AboutMe from './Components/Aboutme/Aboutme';
+
 import NotFound from './Components/NotFound/NotFound';
+import AboutMe from './Components/AboutMe/AboutMe';
 
 
 function App() {
